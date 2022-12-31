@@ -56,7 +56,7 @@ currentVideoSerialNumber = Noofvideos+1
 os.mkdir(f"./database/{str(currentVideoSerialNumber)}")
 
 #writing the video and json data for future reference
-final.write_videofile(rf'./database/{currentVideoSerialNumber}/funny_memes.mp4.mp4',fps=1)
+final.write_videofile(rf'./database/{currentVideoSerialNumber}/funny_memes.mp4',fps=1)
 with open(f"./database/{str(currentVideoSerialNumber)}/Resopnse.json", 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4)
 
