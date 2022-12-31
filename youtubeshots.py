@@ -40,7 +40,7 @@ clips = []
 
 
 for i in range(NoOfMemes):
-    clip = ImageClip(f'{str(i)}.jpg').set_audio(AudioFileClip(r'audio.mp3').subclip(0,)).set_duration(15)
+    clip = ImageClip(f'{str(i)}.jpg').set_audio(AudioFileClip(r'audio.mp3').subclip(0,8)).set_duration(8)
     clips.append(clip)
 
 final = concatenate_videoclips(clips)
